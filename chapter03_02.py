@@ -55,3 +55,48 @@ print()
 # Raw String 출력
 raw_s = r'D:\python\test'
 print(raw_s)
+print()
+
+# 멀티라인 입력
+# 역슬래시 사용
+multi_str = \
+    """
+    String
+    Multi line
+    Test
+    """
+print(multi_str)
+
+# 문자열 연산
+str_o1 = "Python"
+str_o2 = "Apple"
+str_o3 = "How are you doing"
+str_o4 = "Seoul Deajeon Busan Jinju"
+
+print(str_o1 * 3)
+print(str_o1 + str_o2)
+print('y' in str_o1)
+print('n' in str_o1)
+print('P' not in str_o2)
+
+# 문자열 형 변환
+print(str(66), type(str(66)))
+print(str(10.1))
+print(str(True), type(str(True)))
+
+# 문자열 함수(upper, isalnum, startwith, count, endwith, isalpha...)
+
+print("Capitalize : ", str_o1.capitalize())
+print("endwith? : ", str_o2.endswith("s"))
+print("replace : ", str_o1.replace("thon", ' Good'))
+print("sorted : ", sorted(str_o1))
+print("split : ", str_o4.split(' '))
+
+# 반복(시퀀스)
+im_str = "Good Boy!"
+
+print(dir(im_str))  # __iter__
+
+# 출력
+for i in im_str:
+    print(i)
