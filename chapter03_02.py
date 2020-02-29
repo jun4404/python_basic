@@ -100,3 +100,26 @@ print(dir(im_str))  # __iter__
 # 출력
 for i in im_str:
     print(i)
+
+# 슬라이싱
+str_s1 = "Nice Python"
+
+print(len(str_s1))
+
+# 슬라이싱 연습
+print(str_s1[0:3]) # 0 1 2
+print(str_s1[5:11])
+print(str_s1[5:]) # [5:11]
+print(str_s1[:len(str_s1)]) # str_s1[:11]
+print(str_s1[:len(str_s1) -1]) # str_s1[:10]
+print(str_s1[1:4:2]) # 짝수번째에 있는 것들 가져옴
+print(str_s1[-5:]) # 오른쪽에서부터 5번째부터
+print(str_s1[1:-2])
+print(str_s1[::2])
+print(str_s1[::-1])# 역순으로 가져온다.
+
+# 아스키 코드(또는 유니코드)
+a = 'z'
+
+print(ord(a))
+print(chr(122))
